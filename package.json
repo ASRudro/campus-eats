@@ -1,0 +1,27 @@
+{
+  "name": "campuseats",
+  "version": "1.0.0",
+  "description": "CampusEats - Skip the Lunch Queue (University CSE Full-Stack System)",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "node backend/server.js",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "test:api": "cd backend && node test_api.js",
+    "build": "cd frontend && npm run build && node -e \"const fs=require('fs'); fs.copyFileSync('dist/index.html', '../index.html'); fs.cpSync('dist/assets', '../assets', {recursive:true});\""
+  },
+  "keywords": [
+    "university",
+    "canteen",
+    "full-stack",
+    "express",
+    "react",
+    "mysql",
+    "guardrail"
+  ],
+  "author": "CSE Project Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

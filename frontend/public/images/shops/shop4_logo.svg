@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="lemonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#goldRing)" stroke-width="10" filter="url(#dropShadow)"/>
+  <circle cx="250" cy="250" r="218" fill="#ffffff" />
+  
+  <!-- Inner Circle Gradient -->
+  <circle cx="250" cy="250" r="200" fill="url(#bgGrad4)" />
+  
+  <!-- Decorative Star Accents -->
+  <circle cx="250" cy="250" r="185" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="6,6" />
+
+  <!-- Background Juice Splash Rays -->
+  <path d="M 250,250 L 220,90 A 160,160 0 0,1 280,90 Z" fill="rgba(255,255,255,0.15)" />
+  <path d="M 250,250 L 380,180 A 160,160 0 0,1 400,240 Z" fill="rgba(255,255,255,0.15)" />
+  <path d="M 250,250 L 120,180 A 160,160 0 0,0 100,240 Z" fill="rgba(255,255,255,0.15)" />
+
+  <!-- Straw -->
+  <path d="M 270,110 L 310,50" stroke="#f43f5e" stroke-width="16" stroke-linecap="round" />
+  <path d="M 268,110 L 308,50" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-dasharray="10,12" />
+
+  <!-- Cup Lid Dome -->
+  <path d="M 180,180 Q 250,120 320,180 Z" fill="rgba(255,255,255,0.9)" filter="url(#dropShadow)" />
+  <rect x="170" y="175" width="160" height="12" rx="6" fill="#ffffff" />
+
+  <!-- Juice Cup Body -->
+  <path d="M 185,187 L 205,320 Q 250,340 295,320 L 315,187 Z" fill="url(#cupGrad)" filter="url(#dropShadow)" />
+  <!-- Juice Highlights -->
+  <path d="M 195,195 L 210,310 Q 230,320 240,320 L 225,195 Z" fill="rgba(255,255,255,0.3)" />
+
+  <!-- Lemon / Citrus Wheel -->
+  <g transform="translate(190, 230)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="42" fill="url(#lemonGrad)" stroke="#ffffff" stroke-width="4" />
+    <circle cx="0" cy="0" r="32" fill="#fef08a" />
+    <!-- Citrus Segments -->
+    <path d="M 0,0 L 0,-26 A 26,26 0 0,1 22,-14 Z" fill="#eab308" />
+    <path d="M 0,0 L 22,-14 A 26,26 0 0,1 22,14 Z" fill="#eab308" />
+    <path d="M 0,0 L 22,14 A 26,26 0 0,1 0,26 Z" fill="#eab308" />
+    <path d="M 0,0 L 0,26 A 26,26 0 0,1 -22,14 Z" fill="#eab308" />
+    <path d="M 0,0 L -22,14 A 26,26 0 0,1 -22,-14 Z" fill="#eab308" />
+    <path d="M 0,0 L -22,-14 A 26,26 0 0,1 0,-26 Z" fill="#eab308" />
+    <circle cx="0" cy="0" r="6" fill="#ffffff" />
+  </g>
+
+  <!-- Mint Leaves -->
+  <g transform="translate(305, 200)" filter="url(#dropShadow)">
+    <path d="M 0,0 C 25,-30 50,-10 40,20 C 15,20 0,10 0,0 Z" fill="#10b981" />
+    <path d="M 0,0 C 20,-10 30,-5 40,20" stroke="#047857" stroke-width="2" fill="none" />
+    <path d="M -5,10 C 15,40 40,35 30,10 C 10,5 -5,10 -5,10 Z" fill="#34d399" />
+  </g>
+
+  <!-- Ice Cubes -->
+  <rect x="235" y="210" width="28" height="28" rx="6" fill="rgba(255,255,255,0.6)" transform="rotate(15, 249, 224)" />
+  <rect x="255" y="250" width="24" height="24" rx="5" fill="rgba(255,255,255,0.5)" transform="rotate(-20, 267, 262)" />
+
+  <!-- Top Banner Text: FRESH SIP -->
+  <path id="topTextArc4" d="M 80,240 A 170,170 0 0,1 420,240" fill="none" />
+  <text fill="#ffffff" font-family="'Outfit', 'Montserrat', sans-serif" font-size="34" font-weight="900" letter-spacing="4" text-anchor="middle">
+    <textPath href="#topTextArc4" startOffset="50%">FRESH SIP</textPath>
+  </text>
+
+  <!-- Bottom Banner Ribbon -->
+  <g transform="translate(0, 345)" filter="url(#dropShadow)">
+    <path d="M 100,40 L 130,15 L 370,15 L 400,40 L 370,65 L 130,65 Z" fill="#ffffff" stroke="url(#goldRing)" stroke-width="4" />
+    <text x="250" y="47" fill="#0f172a" font-family="'Outfit', 'Montserrat', sans-serif" font-size="20" font-weight="800" letter-spacing="2" text-anchor="middle">
+      JUICE &amp; SHAKES
+    </text>
+  </g>
+
+  <!-- Subtitle Tag -->
+  <text x="250" y="440" fill="#fef08a" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">
+    100% NATURAL &amp; COLD PRESSED
+  </text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.wait": 100,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.useLocalIp": false,
+  "fiveServer.root": "/",
+  "fiveServer.open": "index.html",
+  "fiveServer.port": 5500,
+  "fiveServer.navigate": true,
+  "fiveServer.proxy": {
+    "/api": "http://localhost:5000"
+  }
+}

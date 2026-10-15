@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+    <linearGradient id="matkaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="goldChai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring Ornament -->
+  <circle cx="250" cy="250" r="232" fill="none" stroke="url(#goldChai)" stroke-width="12" filter="url(#shadow5)"/>
+  <circle cx="250" cy="250" r="220" fill="#ffffff" />
+  
+  <!-- Inner Background -->
+  <circle cx="250" cy="250" r="200" fill="url(#bgGrad5)" />
+
+  <!-- Dotted Inner Border -->
+  <circle cx="250" cy="250" r="186" fill="none" stroke="rgba(251,191,36,0.5)" stroke-width="3" stroke-dasharray="8,8" />
+
+  <!-- Steam Waves -->
+  <path d="M 215,160 Q 200,130 215,100 Q 230,70 215,40" stroke="rgba(255,255,255,0.7)" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 250,150 Q 265,120 250,90 Q 235,60 250,30" stroke="rgba(255,255,255,0.85)" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 285,160 Q 300,130 285,100 Q 270,70 285,40" stroke="rgba(255,255,255,0.7)" stroke-width="6" stroke-linecap="round" fill="none" />
+
+  <!-- Traditional Clay Matka Cup & Saucer -->
+  <!-- Saucer -->
+  <ellipse cx="250" cy="335" rx="110" ry="24" fill="#5b2a0c" filter="url(#shadow5)" />
+  <ellipse cx="250" cy="330" rx="100" ry="18" fill="url(#matkaGrad)" />
+
+  <!-- Matka Clay Cup Body -->
+  <path d="M 175,190 Q 155,270 205,320 Q 250,330 295,320 Q 345,270 325,190 Z" fill="url(#matkaGrad)" filter="url(#shadow5)" />
+  <!-- Clay Rim -->
+  <ellipse cx="250" cy="190" rx="75" ry="20" fill="#78350f" stroke="#fbbf24" stroke-width="3" />
+  <!-- Steaming Tea Layer -->
+  <ellipse cx="250" cy="193" rx="65" ry="15" fill="#fef3c7" />
+  <!-- Creamy Malai Swirl -->
+  <path d="M 215,193 Q 240,200 270,190 Q 250,185 225,190" fill="#fde68a" stroke="#d97706" stroke-width="2" />
+
+  <!-- Traditional Carved Motif on Matka -->
+  <path d="M 185,250 Q 250,275 315,250" stroke="#fef08a" stroke-width="4" fill="none" />
+  <path d="M 195,270 Q 250,295 305,270" stroke="#fef08a" stroke-width="3" fill="none" stroke-dasharray="6,4" />
+
+  <!-- Coffee Beans Accents -->
+  <!-- Left Coffee Bean -->
+  <g transform="translate(135, 290) rotate(-25)" filter="url(#shadow5)">
+    <ellipse cx="0" cy="0" rx="18" ry="24" fill="#381907" stroke="#fbbf24" stroke-width="2" />
+    <path d="M 0,-20 Q 10,0 0,20" stroke="#fbbf24" stroke-width="3" fill="none" />
+  </g>
+  <!-- Right Coffee Bean -->
+  <g transform="translate(365, 290) rotate(25)" filter="url(#shadow5)">
+    <ellipse cx="0" cy="0" rx="18" ry="24" fill="#381907" stroke="#fbbf24" stroke-width="2" />
+    <path d="M 0,-20 Q -10,0 0,20" stroke="#fbbf24" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Arc Text Top: THE CHAI BREAK -->
+  <path id="topTextArc5" d="M 70,240 A 180,180 0 0,1 430,240" fill="none" />
+  <text fill="#ffffff" font-family="'Outfit', 'Montserrat', sans-serif" font-size="32" font-weight="900" letter-spacing="4" text-anchor="middle">
+    <textPath href="#topTextArc5" startOffset="50%">THE CHAI BREAK</textPath>
+  </text>
+
+  <!-- Bottom Ribbon -->
+  <g transform="translate(0, 350)" filter="url(#shadow5)">
+    <path d="M 90,40 L 120,15 L 380,15 L 410,40 L 380,65 L 120,65 Z" fill="#ffffff" stroke="url(#goldChai)" stroke-width="4" />
+    <text x="250" y="47" fill="#451a03" font-family="'Outfit', 'Montserrat', sans-serif" font-size="20" font-weight="800" letter-spacing="2" text-anchor="middle">
+      TEA, COFFEE &amp; ADDA
+    </text>
+  </g>
+
+  <!-- Bottom Subtitle -->
+  <text x="250" y="445" fill="#fde68a" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="3" text-anchor="middle">
+    AUTHENTIC MALAI MATKA CHA
+  </text>
+</svg>
